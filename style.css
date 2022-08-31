@@ -1,153 +1,92 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background-color: #EAEEEF;
-  overflow: hidden;
-    
-}
-#name{
-  border:none;
-  width: 6rem;
-  height: 100%;
-  text-align: center;
-  border-right: 4px solid gray;
-}
-#contentContainer{
-  bottom: 0;
-  background-color: #EAEEEF;
-    display: block;
-    height: 90vh;
-    overflow: auto;
-    list-style: none;
     margin: 0;
     padding: 0;
+    font-family: Poppins,sans-serif;
+    box-sizing: border-box;
 }
-#form{ 
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  bottom: 0;    
-}
-#contentContainer::-webkit-scrollbar{
-  width: 10px;
-}
-#contentContainer::-webkit-scrollbar-thumb{
-  background-color: #AAAAAA;
-  border-radius: 100px;
-}
-
-#content{
-    width: 100%;
-    height: 100%;
-    border: none;
-    resize: none;
-    word-break:break-all
-}
-#content::placeholder{
-  padding-left: 1rem;
-}
-
-#btn{
-  cursor: pointer;
-  display: block;
-  font-size: 1.2rem;
-  height: 100%;
-  border: none;
-  background-color: transparent;
-}
-
-label{
-  cursor: pointer;
-}
-#inputImage{
-  position: absolute;
-  opacity: 0;
-  z-index: -100000;
-
-}
-
-
-#contentLi{
-  background-color: #DCE1E4;
-  width: 90%;
-  display: flex;
-  margin: 2rem auto;
-  border-radius: 20px;
-}
-#sendIcon{
-  font-size: 2rem;
-  margin: auto 1.5rem;
-}
-
-
-/* style content */
- 
-  
-  
-  #infoContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width:42%;
-    border-right: 2px solid gray;
-    padding: .5rem;
-  }
-  #time{
-    font-size: .5rem;
-    display:block;
-    text-align: center;
-    
-  }
-  #message{
+body{
+    background-color: #B3CDD1;
     word-break: break-all;
-    font-size: 1.15rem;
-    width: 100%;
-    padding: 8px;
-    
-    margin: .2rem .3rem;
-  }
-  #img{
-    display: block;
-    width: 30%;
-    padding: 8px; 
-    margin: .2rem auto;
-  }
-  #infoName{
-    text-align: center;
-    font-size: 1.2rem;
-    margin: .2rem 0;
-    color: #ff4d4d;
-    
-  }
-  #addImg{
-    display: block;
-    font-size: 2rem;
-  }
+}
 
-  @media screen and (max-width: 650px) {
-    #contentContainer{
-      bottom: 0;
-      background-color: #EAEEEF;
-      display: block;
-      height: 70vh;
-      overflow: auto;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+h1{
+    text-align: center;
+    margin: 4rem;
+    font-size: 5rem;
+}
+input{
+    display: block;
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    padding: 0 10px;
+    
+}
+input::placeholder{
+    color:#b5b5b5;
+    font-size: 1.5rem;
+}
+#reminer{
+    text-align: center;
+    width: 15rem;
+    margin: .3rem auto;
+    background-color: #f7b731;
+    list-style: none;
+}
+button{
+    display: block;
+    border: none;
+    width: 3.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #E2E8F0;
+
+}
+
+#addContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+#todolistContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+#li{
+    cursor : pointer;
+    width : 23.5rem;
+    word-break : break-all;
+    text-align : center;
+    background-color : white;
+    font-size : 1.5rem;
+    margin : .6rem auto;
+    padding : 1rem;
+    list-style: none;
+}
+
+@media screen and (max-width:650px){
+    h1{
+        font-size: 2rem;
+        margin: 3rem auto;
+        font-weight: bolder;
     }
-    #form{ 
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 10vh;
-      display: flex;
-      align-items: center;
-      bottom: 0;    
+    input::placeholder{
+        color:#b5b5b5;
+        font-size: 1.2rem;
     }
-  }
+    #btn{
+        width: 4rem;
+    }
+    #li{
+        cursor : pointer;
+        word-break : break-all;
+        text-align : center;
+        background-color : white;
+        font-size : 1.5rem;
+        margin : .6rem auto;
+        padding : 1rem;
+        list-style: none;
+    }
+}

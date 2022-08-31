@@ -1,34 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="icon" href="https://icon-library.com/images/chat-room-icon/chat-room-icon-7.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Chat room</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <div id="addContainer">
+        <input id="todo" type="text" placeholder="What do you have planned?" onkeypress="pressEnter(event)" required>
+        <button id="btn" type="submit" onclick="todo()" required>add</button>
+    </div>
+    <ol id="todolistContainer">
+      <li id="reminer">* Click to Delete list</li>  
+    </ol>
+    <script src="script.js"></script>
     
-    
-      
-      <ul id="contentContainer">
-
-      </ul>
-      <!-- <input id="inputImage" type="file" accept="image/gif,image/jpeg,image/jpg,image/png"> -->
-
-      <form id="form">
-        <input type="text" id="name" placeholder="name">
-        <input type="text" id="content" placeholder="content">
-        <button id="btn"><i id="sendIcon" class="fa-solid fa-paper-plane"></i></button>
-      </form>   
-   
-    
-    
-    <script src="https://kit.fontawesome.com/3b9660ae0a.js" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
-    <script src=""></script>
-    <script type="module" src="script.js"></script>
-  </body>
+</body>
 </html>
